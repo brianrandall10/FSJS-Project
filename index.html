@@ -8,48 +8,126 @@
 </head>
 <body>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css\styles.css">
 	<div class="header">
-	
-<nav class="navbar navbar-inverse">
+
+<!-- Navigation Bar -->	
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Jtown Academy</a>
+      <a class="navbar-brand" href="#"></a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Rules</a></li>
-      <li><a href="#">Fees</a></li> 
-       <li><a href="#">Inquire</a></li> 
+      <li class="active"><a href="#">JTA</a></li>
+      <li><a href="#about">About Us - Mission</a></li>
+	  <li><a href="#hbook">Handbook</a></li>
+      <li><a href="#fees">Tuition</a></li> 
+       <li><a href="#contact">Contact Us</a></li> 
     </ul>
   </div>
 </nav>
-<!-- 
-Menu 
+<br><br>
 
-About 
+<div id="mainLogo" align="center"><img src="./images\MainLogo.jpg" class="img-responsive" alt="JTA"></div>
 
-Picture Carousel
+<!-- Image Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="hover">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
 
-Mission 
-
-Rules 
-
-Fees 
-
-Sign-up
-
-Login - Passport
-	Roster and details
-	
---> 
-
-<div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p> 
-</div>
-
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <center><img src="./images\image0.jpg" alt="" width="460" height="345"></center>
     </div>
 
+    <div class="item">
+      <center><img src="./images\image1.jpg" alt="" width="460" height="345"></center>
+    </div>
+
+    <div class="item">
+      <center><img src="./images\image2.jpg" alt="" width="460" height="345"></center>
+    </div>
+
+    <div class="item">
+      <center><img src="./images\image3.jpg" alt="" width="460" height="345"></center>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br><br>
+
+<!-- Mission -->
+<div class="Mission" id="about">
+	<H3><u><b>Mission - About Us</b></u></H3>
+	<p>J-Town Academy believes that children will flourish in a safe and supportive environment. Our focus is to provide a stimulating early care and education experience which promotes each child's social/emotional, physical and cognitive development through play. Children are supervised by a qualified and caring staff that enjoys interacting with children. Our goal is to provide positive guidance and discipline that encourages children to be independent learners, learn to self-regulate and to develop problem-solving skills. We are committed to providing an educational and fun program in a Christian atmosphere.</p>
+</div>
+
+<!-- Handbook -->
+<div class="Handbook" id="hbook" align="center">
+	<H3><u>Handbook</u></H3>
+</div>
+
+<!-- Tuition -->
+<div class="Tuition" id="fees" align="center">
+	<H3><u>Tuition</u></H3>
+</div>
+	
+<!-- Contact Us -->
+<div class="Contact-Us" id="contact" align="center">
+	<H3><u>Contact Us</u></H3>
+	<form NAME="ContactUs" ACTION="" METHOD="GET">
+	<input TYPE="text" NAME="inputbox" VALUE="Name:"><P>
+	<input TYPE="text" NAME="inputbox" VALUE="Email:"><P>
+	<input TYPE="text" NAME="inputbox" VALUE="Info:"><P>
+	<input TYPE="button" NAME="button" Value="Submit" onClick="testResults(this.form)">
+	</form>
+</div>
+<!-- Google Map -->
+<center><h3> 10411 Watterson Trail Louisville, KY 40299 </h3>
+<div id="map"></div>
+	<script>
+	function initMap() {
+        var uluru = {lat: 38.193685, lng: -85.566631};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+	</script>
+	<script async defer 
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3FGYeE_BfWvNRfR_OJAmIi5C2HmVmzpY&callback=initMap">
+	</script></center>
+
+
+<!-- Login - Passport ; Roster and details --> 
+
+
+<!-- Footer -->
+<div class="container-fluid" id="footer">
+	<h1>Jtown Academy</h1>
+	<p>10411 Watterson Trail Louisville, KY 40299 - 502.741.1494</p>
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 

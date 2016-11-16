@@ -1,8 +1,8 @@
 # FSJS-Project
 
-This is the repo for a project for Code Louisville Full Stack Javascript.
+This is the repo for was going to be my project for Code Louisville Full Stack Javascript.
 
-It is a website for Jtown Academy childcare in Jeffersontown, Ky.
+It is a basic html website for Jtown Academy childcare in Jeffersontown, Ky.
 
 It will have a simple site to check children in and out providing time stamp logs.
 
